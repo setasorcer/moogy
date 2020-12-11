@@ -18,3 +18,7 @@ an x theme using various programs
 **fm**: ------- [*ranger*](https://ranger.github.io/)
 
 **rss**: ------ [*newsboat*](https://newsboat.org/)
+
+screenshot:
+
+![Image](https://i.imgur.com/2g8nP0V.png)
