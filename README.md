@@ -22,3 +22,20 @@ an x theme using various programs
 screenshot:
 
 ![Image](https://i.imgur.com/2g8nP0V.png)
+
+# installation
+
+start by cloning the repository
+
+`git clone https://github.com/arilipm/moogy.git`
+
+
+place wallpaper in `pictures/`
+
+place folders in `.config/`
+
+place the remaining folders in your home directory `~/`
+
+# copyright
+
+i hate copyright
