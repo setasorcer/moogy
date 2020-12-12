@@ -29,12 +29,9 @@ start by cloning the repository
 
 `git clone https://github.com/arilipm/moogy.git`
 
+place the files in your home directory `~/`
 
-place wallpaper in `pictures/`
-
-place folders in `.config/`
-
-place the remaining folders in your home directory `~/`
+replace "arili" with your username
 
 # copyright
 
