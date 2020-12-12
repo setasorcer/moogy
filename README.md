@@ -43,6 +43,14 @@ and don't forget to mark the appropriate files
 
 as executable! because i forgot
 
+# issues
+
+if the keybindings don't work, add
+
+'sxhkd &'
+
+to '.xinitrc' before 'exec bspwm'
+
 # copyright
 
 i hate copyright
