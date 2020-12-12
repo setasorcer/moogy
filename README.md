@@ -33,6 +33,16 @@ place the files in your home directory `~/`
 
 replace "arili" with your username
 
+and don't forget to mark the appropriate files
+
+* .config/polybar/launch.sh
+
+* .config/bspwm/bspwmrc
+
+* .fehbg
+
+as executable! because i forgot
+
 # copyright
 
 i hate copyright
