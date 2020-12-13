@@ -41,7 +41,7 @@ replace "arili" with your username
 
 to install the alt theme:
 
-copy the folders in 'polybaralt/' and paste them in '.config/'
+copy the folders in `polybaralt/` and paste them in `.config/`
 
 --- 
 
@@ -59,9 +59,9 @@ as executable! because i forgot
 
 if the keybindings don't work, add
 
-'sxhkd &'
+`sxhkd &`
 
-to '.xinitrc' before 'exec bspwm'
+to `.xinitrc` before `exec bspwm`
 
 # copyright
 
