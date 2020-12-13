@@ -19,7 +19,7 @@ an x theme using various programs
 
 **rss**: ------ [*newsboat*](https://newsboat.org/)
 
-screenshot:
+> screenshots:
 
 ![Image](https://i.imgur.com/2g8nP0V.png)
 
@@ -27,7 +27,7 @@ alt theme screenshot:
 
 ![Image](https://i.imgur.com/toG6tu4.png)
 
-# installation 4 nubz
+> installation 4 nubz
 
 start by cloning the repository
 
@@ -55,7 +55,7 @@ and don't forget to mark the appropriate files
 
 as executable! because i forgot
 
-# issues
+> issues
 
 if the keybindings don't work, add
 
@@ -63,6 +63,6 @@ if the keybindings don't work, add
 
 to `.xinitrc` before `exec bspwm`
 
-# copyright
+> copyright
 
 i hate copyright
