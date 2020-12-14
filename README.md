@@ -9,17 +9,17 @@ an x theme using various programs
 
 **bar**: ------ [*polybar*](https://github.com/jaagr/polybar)
 
+**search** ---- [*dmenu*](https://tools.suckless.org/dmenu/)
+
+**fm**: ------- [*ranger*](https://ranger.github.io/)
+
 **comp**: ----- [*picom*](https://github.com/yshui/picom)
 
 **notif**: ---- [*dunst*](https://dunst-project.org/)
 
 **music**: ---- [*mpd*](https://musicpd.org/)
 
-**fm**: ------- [*ranger*](https://ranger.github.io/)
-
 **rss**: ------ [*newsboat*](https://newsboat.org/)
-
-**search** ---- [*dmenu*](https://tools.suckless.org/dmenu/)
 
 > screenshots:
 
