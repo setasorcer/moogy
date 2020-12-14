@@ -19,6 +19,8 @@ an x theme using various programs
 
 **rss**: ------ [*newsboat*](https://newsboat.org/)
 
+**search** ---- [*dmenu*](https://tools.suckless.org/dmenu/)
+
 > screenshots:
 
 ![Image](https://i.imgur.com/2g8nP0V.png)
