@@ -6,21 +6,38 @@
 super + Return
 	urxvt
 
-# program launcher
-super + @space
-	dmenu_run -h 30 -z 1500 -x 200
+# dmenu
+super + p
+	dmenu_run -h 50 -x 20 -y 10 -z 1878 -nb "#0b0f10" -nf "#b8d0d9" -sb "#a7c1d0" -sf "#0b0f10" -fn "Source Code Pro:size=8"
+super + control + p
+	yts -r
+super + shift + p
+	passmenu -h 50 -x 20 -y 10 -z 1878 -nb "#0b0f10" -nf "#b8d0d9" -sb "#a7c1d0" -sf "#0b0f10" -fn "Source Code Pro:size=8"
 super + alt + @space
 	rofi -show drun -lines 12 -padding 18 -width 40 -location 0 -sidebar-mode -columns 3
-# launchers
-super + e
-	firefox
-super + shift + e
-	firefox -P "edu"
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# media keys
+# launchers
+super + F1
+	pmt
+super + F2
+	pme
+super + F3
+	steam -no-browser
+super + F4
+	gimp
+
+super + F9
+	urxvt -e tremc
+super + F10
+	ncmpcpp2
+super + F11
+	urxvt -e newsboat
+super + F12
+	urxvt -e ranger
+
 XF86Audio{Next,Prev,Play,Stop}
 	mpc {next,prev,toggle,stop}
 
@@ -41,7 +58,7 @@ Print
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + shift + {F5,r}
 	bspc {quit,wm -r}
 
 # close and kill
