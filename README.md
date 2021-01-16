@@ -11,6 +11,8 @@ an x theme using various programs
 
 **search** ---- [*dmenu*](https://tools.suckless.org/dmenu/)
 
+*note*: **make sure you patch dwm with line-height and xyw**
+
 **fm**: ------- [*ranger*](https://ranger.github.io/)
 
 **comp**: ----- [*picom*](https://github.com/yshui/picom)
