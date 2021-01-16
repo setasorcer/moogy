@@ -61,8 +61,7 @@ i also suppose your tty is broken
 
 `loginctl` to identify your session
 
-`loginctl terminate-session` to kill it
-
+`loginctl terminate-session <id>` to kill it
 
 > copyright
 
