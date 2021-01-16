@@ -57,6 +57,13 @@ if the keybindings don't work, add
 
 to `.xinitrc` before `exec bspwm`
 
+i also suppose your tty is broken
+
+`loginctl` to identify your session
+
+`loginctl terminate-session` to kill it
+
+
 > copyright
 
 i hate copyright
