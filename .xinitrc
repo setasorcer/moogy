@@ -1,6 +1,11 @@
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+#!/bin/sh
+
+mpd &		# music daemon
+#urxvtd &	# terminal daemon
+unclutter -b &	# hide mouse after 5 seconds
 xset +fp /home/arili/.local/share/fonts
 xset fp rehash
-~/.fehbg &
-mpd &
+hsetroot -cover ~/pictures/wall.png						# wallpaper
+[[ -f ~/.config/x11/xresources ]] && xrdb -merge ~/.config/x11/xresources	# load xresources
+
 exec bspwm
