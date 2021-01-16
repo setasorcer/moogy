@@ -8,6 +8,8 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch
-polybar main &
+polybar -rq music &
+polybar -rq tray &
+polybar -rq ws &
 
 echo "Bar launched..."
