@@ -15,19 +15,19 @@ an x theme using various programs
 
 **comp**: ----- [*picom*](https://github.com/yshui/picom)
 
-**notif**: ---- [*dunst*](https://dunst-project.org/)
+**notifs**: --- [*dunst*](https://dunst-project.org/)
 
 **music**: ---- [*mpd*](https://musicpd.org/)
 
 **rss**: ------ [*newsboat*](https://newsboat.org/)
 
-> screenshots:
+**img view**: - [*sxiv*](https://github.com/muennich/sxiv)
 
-![Image](https://i.imgur.com/2g8nP0V.png)
+**wp set**: --- [*hsetroot*](https://github.com/himdel/hsetroot)
 
-alt theme screenshot:
+> screenshot:
 
-![Image](https://i.imgur.com/toG6tu4.png)
+![Image](https://files.catbox.moe/nzyi2s.png)
 
 > installation 4 nubz
 
@@ -41,23 +41,15 @@ replace "arili" with your username
 
 --- 
 
-to install the alt theme:
-
-copy the folders in `polybaralt/` and paste them in `.config/`
-
---- 
-
 and don't forget to mark the appropriate files
 
 * .config/polybar/launch.sh
 
 * .config/bspwm/bspwmrc
 
-* .fehbg
-
 as executable! because i forgot
 
-> trouibleshooting
+> troubleshooting
 
 if the keybindings don't work, add
 
