@@ -14,12 +14,9 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_follows_pointer true
 
-bspc rule -a Gimp desktop='^3' state=floating follow=on
-bspc rule -a Steam desktop='^4' state=floating
-bspc rule -a firefox desktop='^2'
-bspc rule -a firefox:Toolkit sticky=on state=floating
-#bspc rule -a mpv sticky=on state=floating
-#bspc rule -a Sxiv state=floating
+bspc rule -a Gimp desktop='^2' state=floating
+bspc rule -a Steam desktop='^3' state=floating
+bspc rule -a mpv state=fullscreen
 
 $HOME/.config/polybar/launch.sh &
 picom &
