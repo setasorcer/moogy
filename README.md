@@ -57,8 +57,4 @@ also i do NOT own the wallpapers i put there.
 
 if you own one of the wallpapers and would like me to remove it,
 
-please contact me at
-
-
-
-`arili367@protonmail.com`
+please contact me somewhere
