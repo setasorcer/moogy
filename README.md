@@ -13,9 +13,7 @@ an x theme using various programs
 
 *note*: **make sure you patch dmenu with line-height and xyw**
 
-**fm**: ------- [*ranger*](https://ranger.github.io/)
-
-**comp**: ----- [*picom*](https://github.com/yshui/picom)
+**browser** --- [*pale moon*](https://www.palemoon.org/)
 
 **music**: ---- [*mpd*](https://musicpd.org/)
 
