@@ -1,5 +1,5 @@
 # Original by fikriomar16 from https://github.com/fikriomar16/ncmpcpp-with-albumart/blob/master/ncmpcpp-albumart
-egrep -v '^#' ~/.config/ncmpcpp/config
+% egrep -v '^#' ~/.config/ncmpcpp/config
 mpd_music_dir = "/mnt/data/music/"
 
 #mpd_host = "127.0.0.1"
