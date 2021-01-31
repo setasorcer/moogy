@@ -17,8 +17,6 @@ an x theme using various programs
 
 **comp**: ----- [*picom*](https://github.com/yshui/picom)
 
-**notifs**: --- [*dunst*](https://dunst-project.org/)
-
 **music**: ---- [*mpd*](https://musicpd.org/)
 
 **rss**: ------ [*newsboat*](https://newsboat.org/)
