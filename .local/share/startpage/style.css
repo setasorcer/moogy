@@ -1,0 +1,134 @@
+/* Original by rajshekhar26 at https://github.com/rajshekhar26/startpage/blob/master/style.css */
+* {
+	transition: 0.2s ease-in-out;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg-dark: #0b0f10;
+	--bg-dark2: #47464e;
+	--fg-dark: #dfdff2;
+	--bg-light: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	--bg-light2: #f9f9f9;
+	--fg-light: #6f798c;
+	--green: #70b791;
+	--magenta: #f69899;
+	--yellow: #dbb771;
+	--cyan: #5e8d87;
+	--font: 'scientifica', sans-serif;
+}
+
+body {
+	font-family: var(--font);
+	font-size: 14px;
+}
+
+.dark {
+	background-color: var(--bg-dark);
+	background-size: cover;
+	background-position: center;
+	color: var(--fg-dark);
+}
+
+.light {
+	background-image: var(--bg-light);
+	color: var(--fg-light);
+}
+
+button {
+	color: var(--fg-dark);
+	font-family: var(--font);
+	font-size: 12px;
+	text-transform: uppercase;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	margin: 2em 2em 0 0;
+	padding: 0.8em 1.5em;
+	border: none;
+	border-radius: 0px;
+	box-shadow: 9px 9px rgba(0, 0, 0, 0.65);
+	-moz-appearance: none;
+}
+
+.dark button {
+	background-color: var(--cyan);
+	color: var(--bg-dark);
+}
+
+.light button {
+	background-color: var(--magenta);
+}
+
+button:hover {
+	background-color: var(--yellow);
+}
+
+#box {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	height: 6.3em;
+	width: 5em;
+	padding: 3em;
+	margin: 3%;
+	box-shadow: 9px 9px rgba(0, 0, 0, 0.65);
+}
+
+.dark .container {
+	background-color: var(--bg-dark2);
+}
+
+.light .container {
+	background-color: var(--bg-light2);
+}
+
+header {
+	padding-bottom: 8px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+.dark a,
+.dark a:visited {
+	color: var(--fg-dark);
+}
+
+.light a,
+.light a:visited {
+	color: var(--fg-light);
+}
+
+.social a:hover,
+.social header {
+	color: var(--magenta);
+}
+
+.dev a:hover,
+.dev header {
+	color: var(--yellow);
+}
+
+.other a:hover,
+.other header {
+	color: var(--cyan);
+}
+
+@media (max-width: 620px) {
+	.container {
+		padding: 1.5em;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
