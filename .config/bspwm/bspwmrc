@@ -2,21 +2,32 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX
+bspc monitor -d I II III IV V VI
 
-bspc config border_width         2
-bspc config window_gap          20
+bspc config border_width        2
+bspc config top_padding		90
+bspc config right_padding	40
+bspc config left_padding	40
+bspc config bottom_padding	40
+bspc config window_gap          15
 
 bspc config focused_border_color "#a7c1d0"
 bspc config normal_border_color "#0b0f10"
+
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-bspc config focus_follows_pointer true
 
 bspc rule -a Gimp desktop='^2' state=floating
 bspc rule -a Steam desktop='^3' state=floating
+bspc rule -a Waterfox:Toolkit state=floating sticky=true
 bspc rule -a mpv state=fullscreen
+bspc rule -a *:*:dialog state=floating
+
+#bspc rule -a *:*:ncmpcpp state=floating sticky=true rectangle=470x188+1242+875
+#bspc rule -a *:*:ueber state=floating sticky=true rectangle=188x188+1715+875
+bspc rule -a *:*:power state=floating rectangle=288x108+840+520
+bspc rule -a *:*:ncmpc state=floating sticky=true rectangle=600x188+1305+875
 
 $HOME/.config/polybar/launch.sh &
 picom &
