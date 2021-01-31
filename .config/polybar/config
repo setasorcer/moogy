@@ -22,12 +22,11 @@ background = ${xrdb:color0:#222}
 color1 = ${xrdb:color2}
 color2 = ${xrdb:color1}
 color3 = ${xrdb:color6}
-color4 = "#c0a2a2"
 
 [bar/base]
-enable-ipc = true
-font-0 = fixed:pixelsize=8:antialias=false;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+enable-ipc = false
+font-0 = scientifica:pixelsize=8:antialias=false;1
+font-1 = Noto Sans CJK JP:size=8:antialias=false;1
 font-2 = Wuncon Siji:pixelsize=10;1
 
 bottom = false
@@ -45,7 +44,7 @@ inherit = bar/base
 width = 14.2%
 bottom = false
 
-foreground = ${colors.color1}
+foreground = ${colors.color3}
 
 offset-x = 20
 
@@ -61,7 +60,7 @@ width = 32%
 foreground = ${colors.color1}
 offset-x = 50.1%
 
-modules-left = mpd
+modules-center = mpd
 
 [bar/tray]
 inherit = bar/base
@@ -70,7 +69,7 @@ width = 16.2%
 offset-x = 82.7%
 foreground = ${colors.color1}
 
-modules-left = pulseaudio cpu memory eth date
+modules-left = pulseaudio cpu memory eth script
 
 [module/bspwm]
 type = internal/bspwm
@@ -82,7 +81,7 @@ label-focused-padding = 4
 
 label-occupied = %index%
 label-occupied-background = ${colors.background}
-label-occupied-foreground = ${colors.color4}
+label-occupied-foreground = ${colors.color1}
 label-occupied-padding = 4
 
 label-urgent = %index%!
@@ -97,8 +96,9 @@ label-empty-padding = 4
 [module/mpd]
 type = internal/mpd
 format-online = <label-song> <label-time>
+label-song = %album-artist% - %title%
 ; <icon-prev> <icon-stop> <toggle> <icon-next>
-format-online-prefix = 
+format-online-prefix = " "
 format-online-background = ${colors.background}
 format-online-padding = 5
 
@@ -120,7 +120,7 @@ label = %percentage:2%%
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-padding = 4
+format-padding = 2
 label = %percentage_used%%
 
 [module/eth]
@@ -132,7 +132,7 @@ format-connected-prefix = " "
 label-connected = con 
 
 format-disconnected = <label-disconnected>
-label-disconnected = amish paradise
+label-disconnected = d/c
 label-disconnected-foreground = ${colors.color1}
 
 [module/date]
@@ -146,19 +146,29 @@ time = "%H:%M"
 ;format-prefix = 
 ;format-prefix-foreground = ${colors.foreground}
 label = %date% %time%
-format-padding = 4
+format-padding = 2
 label-foreground = ${colors.color1}
 label-background = ${colors.background}
+
+[module/script]
+type = custom/script
+exec = ~/.scripts/tools/date.sh
+interval = 5
+click-left = ~/.scripts/tools/date.sh --popup
+format-background = ${colors.alt-background}
+format-foreground = ${colors.alt-foreground}
+label = %output:21%
+format-padding = 2
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 format-volume = <ramp-volume> <label-volume>
-format-volume-padding = 4
+format-volume-padding = 2
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 label-muted =  muted
-label-muted-padding = 4
+label-muted-padding = 2
 label-muted-foreground = ${root.foreground}
 
 ramp-volume-0 = 
@@ -172,7 +182,7 @@ type = internal/alsa
 
 master-soundcard = hw:1
 format-volume = <ramp-volume> <label-volume>
-format-volume-padding = 4
+format-volume-padding = 2
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
@@ -184,7 +194,7 @@ ramp-volume-4 = 
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-format-muted-padding = 4
+format-muted-padding = 2
 label-muted = muted
 
 [settings]
