@@ -43,6 +43,12 @@ i also suppose your tty is broken
 
 `loginctl terminate-session <id>` to kill it
 
+> known issues
+
+*with dmenu* shadows can overlap with polybar's shadow
+
+*with ueberzug* album art sometimes shows on a different terminal
+
 > copyright
 
 i hate copyright
