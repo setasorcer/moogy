@@ -22,10 +22,8 @@ bspc rule -a Gimp desktop='^2' state=floating
 bspc rule -a Steam desktop='^3' state=floating
 bspc rule -a Waterfox:Toolkit state=floating sticky=true
 bspc rule -a mpv state=fullscreen
-bspc rule -a *:*:dialog state=floating
 
-#bspc rule -a *:*:ncmpcpp state=floating sticky=true rectangle=470x188+1242+875
-#bspc rule -a *:*:ueber state=floating sticky=true rectangle=188x188+1715+875
+bspc rule -a *:*:dialog state=floating
 bspc rule -a *:*:power state=floating rectangle=288x108+840+520
 bspc rule -a *:*:ncmpc state=floating sticky=true rectangle=600x188+1305+875
 
