@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	urxvt
+	urxvtc
 
 # dmenu
 super + p
@@ -18,25 +18,29 @@ super + alt + @space
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+super + alt + F5
+	urxvtc -title power -e ./.scripts/tools/power.sh
 
 # launchers
 super + F1
 	pmt
-super + F2
+super + shift + F1
 	pme
+super + F2
+	wfe
 super + F3
-	steam -no-browser
+	steam -no-browser -nocache
 super + F4
 	gimp
 
 super + F9
-	urxvt -e tremc
+	urxvtc -e tremc
 super + F10
-	ncmpcpp2
+	urxvtc -title ncmpc -e tmux new "tmux set-option destroy-unattached on && ncmpcpp" ';' split -h -d "tmux resize-pane -R 13; ./.scripts/tools/albumart-ueber.bash"
 super + F11
-	urxvt -e newsboat
+	urxvtc -e newsboat
 super + F12
-	urxvt -e ranger
+	urxvtc -e ranger
 
 XF86Audio{Next,Prev,Play,Stop}
 	mpc {next,prev,toggle,stop}
@@ -63,7 +67,7 @@ super + shift + {F5,r}
 
 # close and kill
 super + {_,shift + }w
-	bspc node -{c,k}
+	bspc node -{k,c}
 
 # alternate between the tiled and monocle layout
 super + m
