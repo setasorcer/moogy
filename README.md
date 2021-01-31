@@ -3,25 +3,7 @@ an x theme using various programs
 
 > required:
 
-**distro**: --- [*artix/arch*](https://artixlinux.org/)
-
-**wm**: ------- [*bspwm*](https://github.com/baskerville/bspwm)
-
-**bar**: ------ [*polybar*](https://github.com/jaagr/polybar)
-
-**search** ---- [*dmenu*](https://tools.suckless.org/dmenu/)
-
-*note*: **make sure you patch dmenu with line-height and xyw**
-
-**browser** --- [*pale moon*](https://www.palemoon.org/)
-
-**music**: ---- [*mpd*](https://musicpd.org/)
-
-**rss**: ------ [*newsboat*](https://newsboat.org/)
-
-**img view**: - [*sxiv*](https://github.com/muennich/sxiv)
-
-**wp set**: --- [*hsetroot*](https://github.com/himdel/hsetroot)
+*moved - see [INFO.md](https://github.com/setasorcer/moogy/blob/main/INFO.md) for more info*
 
 > screenshot:
 
