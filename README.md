@@ -7,7 +7,7 @@ an x theme using various programs
 
 > screenshot:
 
-![Image](https://files.catbox.moe/nzyi2s.png)
+![Image](https://files.catbox.moe/vm5xep.png)
 
 > installation 4 nubz
 
