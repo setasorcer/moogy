@@ -12,7 +12,7 @@
     separator_color = frame
     sort = no
     idle_threshold = 120
-    font = unifont 8
+    font = "scientifica 8"
     line_height = 4
     # Possible values are:
     # full: Allow a small subset of html markup in notifications:
