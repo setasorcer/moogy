@@ -1,0 +1,187 @@
+hi -a StatusLineNormal background: #0b0f10 !important; padding-top: 2px; padding-bottom: 2px; border-left: 10px solid transparent; color: #0b0f10 !important;
+
+hi -l StatusLineNormal StatusLineSecure
+	hi -a StatusLineSecure						     border-left: 10px solid #5e8d87;
+hi -l StatusLineNormal StatusLineExtended
+	hi -a StatusLineExtended					     border-left: 10px solid #7183a9;
+hi -l StatusLineNormal StatusCmdLine
+	hi -a StatusCmdLine							 
+hi -l StatusLineNormal StatusLine[selected]
+	hi -a StatusLine[selected]				 
+hi -l StatusLineNormal StatusLineBroken
+	hi -a StatusLineBroken		             border-left: 10px solid #f69899;				 
+
+hi -a StatusLine                       color: #b8d0d9 !important; 
+hi -a StatusLine                       font-weight: normal;
+hi -a StatusLine                       font-size: 11px;
+
+hi -a Events                       border: 2px solid #b8d0d9 !important;
+hi -a Preview											 color: #0b0f10;
+
+hi -a StatusModeMsg                color: #b8d0d9 !important;
+
+hi -l StatusModeMsg StatusQuestion 
+hi -l StatusModeMsg StatusInfoMsg 
+hi -l StatusModeMsg StatusMoreMsg
+hi -l StatusModeMsg StatusWarningMsg 
+hi -l StatusModeMsg StatusErrorMsg               
+
+hi -a CmdCmdLine									 color: #b8d0d9;
+
+hi -a CmdCmdLine									 font-weight: normal;
+hi -a CmdCmdLine									 font-family: Ubuntu;
+hi -a CmdNormal									   font-size: 11px; text-shadow: none;
+hi -a CmdNormal									   padding-top: 2px;
+hi -a CmdNormal									   background: #0b0f10;
+
+hi -a Normal											 color: #b8d0d9; background: #0b0f10; font-weight: normal;
+
+hi -l CmdNormal CmdOutput
+	hi -a CmdOutput										  
+hi -l CmdNormal CmdInput
+	hi -a CmdInput										  
+hi -l CmdNormal CmdModeMsg
+	hi -a CmdModeMsg									 
+hi -l CmdNormal CmdInfoMsg
+	hi -a CmdInfoMsg									 
+hi -l CmdNormal CmdMoreMsg
+	hi -a CmdMoreMsg									 
+hi -l CmdNormal CmdQuestion
+	hi -a CmdQuestion									 
+hi -l CmdNormal CmdPrompt
+	hi -a CmdPrompt										 
+hi -l CmdNormal CmdErrorMsg
+	hi -a CmdErrorMsg									 color: #f7c3ad !important;
+hi -l CmdNormal CmdWarningMsg
+	hi -a CmdWarningMsg								 color: #f7c3ad !important;
+
+"NOTE: buffer colors
+hi -a CompItem[selected]           background-color: #0b0f10 !important;
+
+hi -a Title												 color: #f59798;
+
+hi -a CompTitle										 color: #f59798;
+hi -a CompTitle										 background: transparent;
+hi -a CompTitle										 font-weight: normal; font-family: Verdana; font-size: 14px;
+
+hi -a CompTitleSep								 height: 0px !important; background: #0b0f10 !important;
+
+
+hi -a CompResult									 width: 50%; overfloaw: hidden;
+hi -a Link                         color: #b8d0d9;
+
+hi -a CompDesc									   color: #a8a8a8; width: 50%; font-family: Helvetica;
+hi -a URL				                   text-decoration: none; color: #a8a8a8; background: inherit;
+hi -a URL:hover			               text-decoration: underline; cursor: pointer;
+
+hi -a LinkInfo		                 color: #a8a8a8;font-family: Helvetica;
+
+hi -a CompItem										 color: #b8d0d9;
+hi -a CompItem										 font-weight: normal; background-color: inherit;
+
+hi -a CompItem:nth-child(2n+1)     background-color: inherit;
+hi -a CompIcon										 width: 16px; min-width: 16px; display: inline-block; margin-right: 2ex; margin-left: 2px;
+hi -a CompLess										 text-align: center; height: 0; line-height: .5ex; padding-top: 1ex;
+hi -a CompGroup                    background: transparent;
+"hi -a CompMore::after		
+"hi -a CompIcon>img
+"hi -a CompItem>*
+
+hi -a CompMore										 color: #b8d0d9;
+hi -a CompMsg											 color: #b8d0d9;
+
+hi -a Tag             color: #b8d0d9;
+hi -a Keyword         color: #b8d0d9;
+hi -a NonText					color: #2f2f2f;
+hi -a Indicator				color: #2bef4s;
+
+hi -a Search          font-size: inherit; padding: 0; 
+hi -a Search          color: #0b0f10; background-color: #9bece7; padding: 0;
+
+hi -a ModeMsg                       color: #b8d0d9;
+hi -a ModeMsg                       padding: 5px;
+hi -a ModeMsg                       background: #0b0f10;
+
+hi -l ModeMsg MoreMsg 
+	hi -a MoreMsg                     color: #9D3BA7; 
+hi -l ModeMsg InfoMsg 
+hi -l ModeMsg Question 
+	hi -a Question                    color: #8cd0d3; 
+hi -l ModeMsg ErrorMsg 
+	hi -a ErrorMsg                    color: red; 
+hi -l ModeMsg WarningMsg
+	hi -a WarningMsg                  color: #e6c080; 
+
+hi -a Function				color: #e6c080;
+hi -a Null						color: #8cd0d3;
+hi -a String					color: #80c0d9;
+hi -l Null Number
+hi -l Null Object
+
+"hi -a CompLess::after                  color:red !important;		
+"hi -a CompGroup:last-of-type           color: red !important;
+"hi -a CompGroup:not(:first-of-type)
+
+hi -a Gradient				          height: 1px; margin-bottom: -1px; margin-top: -1px;
+hi -a GradientLeft							background-color: #2f2f2f;
+hi -a GradientRight							background-color: #2f2f2f;
+
+hi -a Link:not(:hover)>LinkInfo color: #f59798;
+hi -a Message                   color: #b8d0d9;
+hi -a Message\ String           color: #b8d0d9;
+
+
+
+"NOTE: other
+"hi -a LineNr
+"hi -a Disabled
+"hi -a Enabled
+hi -a Filter color: #b8d0d9;
+"hi -a FrameIndicator
+"NOTE: editor
+"hi -a EditorBlink1
+"hi -a EditorBlink2
+"hi -a EditorEditing
+"hi -a EditorError
+"NOTE: font
+"hi -a FontCode
+"hi -a FontMixed
+"hi -a FontProportional
+"NOTE: Variables
+"hi -a Function
+"NOTE: Help
+"hi -a Help
+"hi -a HelpKeyword color: #b8d0d9;
+"hi -a HelpKey color: #b8d0d9;
+"hi -a HelpString color: #b8d0d9;
+"hi -a HelpArg
+"hi -a HelpBody
+"hi -a HelpBorder
+"hi -a HelpCode
+"hi -a HelpDefault
+"hi -a HelpDescription
+"hi -a HelpDescription[short]
+"hi -a HelpEm
+"hi -a HelpEx
+"hi -a HelpExample
+"hi -a HelpExample::before
+"hi -a HelpHead
+"hi -a HelpHead1
+"hi -a HelpHead2
+"hi -a HelpHead3
+"hi -a HelpHead4
+"hi -a HelpInfo
+
+"NOTE: hint color 
+hi -a Hint						font-family: Source Code Pro !important; font-size: 10px !important; font-weight: bold !important; color: #b8d0d9 !important; background-color: #0b0f10 !important; padding: 4px; border: none !important;
+hi -a Hint[active]		background: #5e8d87 !important; 
+hi -a HintActive			background: #D7D8DB !important; 
+hi -a Hint::after			content: attr(text) !important;
+hi -a HintImage				opacity: 0.5 !important;
+hi -a HintElem			color:#4762b3 !important;background: transparent !important; 
+
+hi -a Function				color: #e6c080;
+hi -a Null						color: #8cd0d3;
+hi -a Number					color: #8cd0d3;
+hi -a Object					color: #8cd0d3;
+hi -a String color: #80c0d9;t
