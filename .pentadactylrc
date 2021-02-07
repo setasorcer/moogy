@@ -1,0 +1,18 @@
+"1.3.1
+
+loadplugins '\.(js|penta)$'
+group user
+colo moogy
+map -count -modes=n,v h -builtin <count>8h
+map -count -modes=n,v j -builtin <count>8j
+map -count -modes=n,v k -builtin <count>8k
+map -count -modes=n,v l -builtin <count>8l
+map -count -modes=n <C-t> -builtin <count>:tabopen<Space>file:///home/arili/.local/share/startpage/index.html<Return>
+set cdpath=''
+set defsearch=dd
+set guioptions=Cs
+set hintkeys=asdflkj
+set newtab=help
+set titlestring='Pale Moon'
+
+" vim: set ft=pentadactyl:
