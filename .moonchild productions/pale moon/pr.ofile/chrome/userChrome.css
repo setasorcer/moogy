@@ -1,0 +1,131 @@
+/* Original by adisib from https://gist.github.com/adisib/4c544ea398444d811836da2bdd83ab44 */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* reduce UI height (for "Use Small Icons" enabled) to avoid wasting vertical space especially on small screens */
+#titlebar, #TabsToolbar, #tabbrowser-tabs, #appmenu-button-container, #titlebar-buttonbox {
+  margin-top: -2px !important;
+}
+.tabbrowser-tab, .tabs-newtab-button {
+  margin-top: 2px !important;
+}
+#navigator-toolbox {
+  margin-bottom: -2px !important;
+}
+#main-window[sizemode="maximized"] .titlebar-button {
+  margin-top: 2px !important;
+  padding-bottom: 6px !important;
+}
+#appmenu-button .button-text {
+  margin-top: 2px !important;
+  padding-bottom: 1px !important;
+}
+
+/* remove styling and vertical padding from buttons */
+.toolbarbutton-1 > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-badge-container,
+.toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
+  background-image: none !important;
+  box-shadow: none !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* remove unnecessarily wasted space between tabs */
+.tabbrowser-tab, .tabs-newtab-button {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* no rounding on tabs or anything else to be consistent with win10 */
+#urlbar, .searchbar-textbox {
+  border-radius: 0px !important;
+  border: 1px solid grey !important;
+}
+#notification-popup-box,
+#full-screen-warning-message,
+.tabbrowser-tab, .tabs-newtab-button {
+  border-radius: 0px !important;
+}
+
+/* don't double up borders for adjacent tabs (but right border goes missing when newtab button leaves) */
+.tabbrowser-tab {
+  border: 1px solid !important; /* Pale Moon added a 2px border with transparent outside which is undesirable */
+  border-style: none none none solid !important;
+}
+.tabs-newtab-button {
+  border: 1px solid !important; /* Pale Moon added a 2px border with transparent outside which is undesirable */
+  border-style: none solid none solid !important;
+}
+
+/* remove gradient and shadow on tabs, also add transparency I guess */
+.tabbrowser-tab, .tabs-newtab-button {
+  box-shadow: none !important;
+  background: #171717 !important;
+}
+.tabbrowser-tab[selected="true"] {
+  box-shadow: none !important;
+  background: #0b0f10 !important;
+}
+
+/* make button more square and borderless to be consistent with win10 */
+#appmenu-button {
+  border-radius: 0px !important;
+  padding: 0px 16px !important;
+  margin: 0px 0px 1px !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Use simple solid colors for button to be consistent with win10 */
+#appmenu-button {
+  background-image: none !important;
+  background-color: #0A62D2 !important;
+}
+#main-window[privatebrowsingmode=temporary] #appmenu-button {
+  background-image: none !important;
+  background-color: #6914B4 !important;
+}
+
+/* don't show the private browsing icon */
+#appmenu-button > .button-box > .box-inherit > .button-icon {
+  display: none !important;
+}
+/* instead, make the text italicized */
+#main-window[privatebrowsingmode=temporary] #appmenu-button .button-text {
+  font-style: italic !important;
+}
+
+/* Hide Menu Dropmarker */
+#appmenu-button > .button-box > .button-menu-dropmarker {
+  display: none !important;
+}
+
+/* Don't show feed button */
+#feed-button, #ub-feed-button {
+  display: none !important;
+}
+
+/* change text of the button (in case I ever want to) */
+/*
+#appmenu-button dropmarker:before {
+  content: “Pale Moon” !important;
+}
+#appmenu-button .button-text {
+  display: none !important;
+}
+*/
+
+/* color of tab text */
+.tabbrowser-tab {
+	color: #b8d0d9 !important;
+}
+/* remove buttons */
+.tabs-newtab-button,
+.tab-icon-image,
+.tab-close-button {
+	display: none !important;
+}
+/*.tabbrowser-tab {
+	color: #0b0f10 !important;
+}*/
