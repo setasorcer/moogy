@@ -51,7 +51,7 @@ i also suppose your tty is broken
 
 > copyright
 
-i hate copyright
+GPL 3.0 or something
 
 also i do NOT own the wallpapers i put there.
 
